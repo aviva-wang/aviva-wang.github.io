@@ -41,22 +41,22 @@
    obstacleY = 0;
    lives = 3;
    //car images
-   c = loadImage("ControlerCar.png");
-   k = loadImage("obstacle.png");
+   c = loadImage("FinalProject/ControlerCar.png");
+   k = loadImage("FinalProject/obstacle.png");
    randLanes = [80, 250, 400];    
   //text bubble
- t1 = loadImage("tb1.png");
- t2 = loadImage("tb2.png");
- t3 = loadImage("tb3.png");
- t4 = loadImage("tb4.png");
- t5 = loadImage("tb5.png");
- t6 = loadImage("tb6.png");
- t7 = loadImage("tb7.png");
- t8 = loadImage("tb8.png");
- t9 = loadImage("tb9.png");
- es = loadImage("gameover.png");
-  r = loadImage("replay.png");
- rd = loadImage("replaydown.png");
+ t1 = loadImage("FinalProject/tb1.png");
+ t2 = loadImage("FinalProject/tb2.png");
+ t3 = loadImage("FinalProject/tb3.png");
+ t4 = loadImage("FinalProject/tb4.png");
+ t5 = loadImage("FinalProject/tb5.png");
+ t6 = loadImage("FinalProject/tb6.png");
+ t7 = loadImage("FinalProject/tb7.png");
+ t8 = loadImage("FinalProject/tb8.png");
+ t9 = loadImage("FinalProject/tb9.png");
+ es = loadImage("FinalProject/gameover.png");
+  r = loadImage("FinalProject/replay.png");
+ rd = loadImage("FinalProject/replaydown.png");
   
   }
   void draw(){ 

@@ -97,7 +97,7 @@ var keysTyped9 = 0;
      
   } else if ( gameStarted === 1) {
       image(instructionsPage,0,0,800,600);
-      image(playButton,525, 490, 150, 75);
+      image(playButton,525, 510, 150, 50);
       mouseClicked = function() {
       gameStarted = 2;
       };

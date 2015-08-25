@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en-US">
+	<meta name="viewport" content="width=device-width">
+	<title>Eyes on the Road</title>
+	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+	<!--add icon picture later-->
+	<link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel='shortcut icon' href='icon.ico' type='image/x-icon'/ >
+<style>
+	@font-face {
+		font-family:key;
+		src:url('key.ttf');
+	}
+	@font-face {font-family: impactfont;
+	 	font-weight:bold;
+		src: url('impactfont.ttf');
+	}  
+	@font-face {font-family: Impact Label Reversed;
+	 	font-weight:bold;
+		src: url('impactreversed.ttf');
+	} 
+	body{
+		background-color: #1E1E20;
+		margin: 20px;
+		text-align: center;
+	}
+	.title{
+	    background-color:#1E1E20;
+	    text-align: center;
+	    vertical-align:super;
+	    left:0px;
+	    right:0px;
+	    position:fixed;
+	    height:120px;
+	    top:0px;
+	    bottom:0px;
+	    width:100%;
+	    z-index: 110;
+	}
+	.roadlines{
+		width:100%;
+		height:auto;
+	}
+	h1{
+		font-size:55px;
+		font-family: key, sans-serif;
+	}
+	h2{
+		font-size:70px;
+		font-family: Impact Label Reversed, sans-serif;
+		color:white;
+	}
+	.game{
+		height:700px;
+		background-color: gray;
+		margin-top:200px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom:60px;
+		border:solid;
+	}
+	.border{
+		width:100%;
+		height:auto;
+	}
+	.borderslides{
+		margin-top:-100;
+		width:100%;
+		height:auto;	
+	}
+	.info{
+		margin-top:30px;
+		height:225px;
+		position:relative;
+		width:auto;
+		margin-left:3%;
+		float: left;
+		margin-bottom: 50px;
+		background-color: #1E1E20;
+	}
+	.slide{
+		border-radius: 25px;
+	}
+	.summary{
+		margin-top:30px;
+		height:568px;
+		position:relative;
+		width:auto;
+		margin-right:3%;
+		/*float: right;*/
+		margin-bottom: 50px;
+		background-color:#1E1E20;
+	}
+	.pledge{
+		width:40%;
+		height:auto;
+		margin-top:20px;
+		border:solid;
+		border-color: black;
+		-webkit-opacity: 0.8;
+    	-moz-opacity: 0.8;
+    	transition: 0.5s ease;
+    	-webkit-transition: 0.5s ease;
+    	-moz-transition: 0.5s ease;
+	}
+	.pledge:hover{
+    	-webkit-transform: scale(1.5,1.5);
+    	-moz-transform:scale(1.5,1.5);
+    	opacity: 1;
+    	-webkit-opacity: 1;
+    	-moz-opacity: 1;
+	}
+	.takepledge{
+		width:88%;
+		height: auto;
+		margin-top:35px;
+		margin-bottom:30px;
+	}
+	.gwc{
+		height:50%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 30px;
+	}
+	.gwcinfo{
+		font-size:200%;
+		font-family: 'Ropa Sans', sans-serif;
+		color:#F0F0F0;
+	}
+	.indiv{
+	    width:100%;
+	    margin-top:20px;
+	}
+	.namebio{
+		font-size:70px;
+		font-family: Impact Label Reversed, sans-serif;
+		color:white;
+	}
+	.biopic{
+		width:200px;
+		height:200px;
+		margin-top:20px;
+	}
+	.kavya{
+		position:relative;
+		height:800px;
+		width:27.5%;
+		margin-left:4%;
+		float:left;
+		margin-right:2%;
+		margin-bottom: 30px;
+		border:solid;
+		border-color: black;
+		z-index: -1;
+	}
+	.aviva{
+		position:relative;
+		float:left;
+		height:800px;
+		width:27.5%;
+		margin-left:2%;
+		margin-right:2%;
+		margin-bottom: 30px;
+		border:solid;
+		border-color: black;
+		z-index: -1;
+	}
+	.bridget{
+		position:relative;
+		float:right;
+		height:800px;
+		width:27.5%;
+		margin-right:4%;
+		margin-left:2%;
+		margin-bottom: 30px;
+		border:solid;
+		border-color: black;
+		z-index: -1;
+	}
+	.biotext{
+		font-size:30px;
+		font-family:'Ropa Sans', sans-serif;
+		color:#F0F0F0;
+		padding:20px;
+	}
+	h3{
+		position:relative;
+		margin-bottom:10px;
+		font-family:helvetica,sans-serif;
+		font-size:15px;
+		color:#404040;
+	}
+</style>
+</head>
+<body>
+<!--title bar stays in place as user scrolls-->
+	<div class = "title">
+	<img class='roadlines' src='road.jpg'>
+	</div> 
+
+<!--insert completed game in this section-->
+	<div class = 'game'>
+	</div>
+	
+	<img class = 'border' src='border.jpg'>
+
+<!--about project section starts-->
+	<h2> About the Project</h2>
+
+	    <div id="slides">
+	      <img class= 'slide' src="img/infoslide1.jpg">
+	      <img class= 'slide' src="img/infoslide2.jpg">
+	      <img class='slide' src="img/infoslide3.jpg">
+	      <img class='slide' src="img/infoslide4.jpg">
+	      <img class='slide' src="img/infoslide5.jpg">
+	      <img class='slide' src="img/infoslide6.jpg">
+	      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+	      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+	    </div>
+		
+
+	    <div id="slides2">
+	      <img class='slide' src="img/summslide1.jpg">
+	      <img class='slide' src="img/summslide2.jpg">
+	      <img class='slide' src="img/summslide3.jpg">
+	      <img class='slide' src="img/summslide4.jpg">
+	      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+	      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+	    </div>
+
+<!--about project section ends-->
+	
+	<img class = 'borderslides' src='border.jpg'>
+	
+<!--link to at&t pledge website (maybe contact them?)-->
+	<a href='http://www.itcanwait.com/pledge'><img class='pledge' src='pledge.jpg'></a>
+	<img class ='takepledge' src='joinpledge.jpg'>
+	</div>
+	
+	<img class = 'border' src='border.jpg'>
+	
+	<div class = 'aboutproject'>
+		<h2>About Us</h2>
+<!--info about GWC-->
+		<div class='gwc'>
+			<p class='gwcinfo'>Girls Who Code is an intensive summer immersion program that runs for 7 weeks every summer in cities across the United States. The organization aims to close the gender gap in the technology sector by educating girls in computer science. During our time at Girls Who Code, we explored the logical foundations of coding, learned the basics of several programming languages, visited multiple technology companies, and gained the soft skills necessary to succeed in professional settings.</p>
+			<p class='gwcinfo'>Our time at Girls Who Code Accenture 2015 culminated in our final project, composed of this game and website.</p>
+		</div>
+<!--individual info boxes-->
+		<div class id='indiv'>
+			<div class='kavya'>
+				<img class='biopic' src='kavya.png'>
+				<br>
+				<span class='namebio'>Kavya</span>
+				<p class='biotext'>Entering Junior year in high school. Enjoys running, reading, coding, binge watching Prison Break on Netflix, babysitting, and banana bread. </p>
+				<br><br><br><br>
+				<div class='contact'>
+					<h3><b>kavs244@gmail.com</h3>
+					<h3>https://www.linkedin.com/in/kavyadagli</b></h3>
+				</div>
+<!--insert some info-->
+			</div>
+			<div class='aviva'>
+				<img class='biopic' src='avivapic.png'>
+				<br>
+				<span class='namebio'>Aviva</span>
+				<p class='biotext'>Rising senior at Hunter College High School. Loves reading, coding, listening to music,  chocolate cake, Starbucks, terrible jokes, pandas, jumping on trampolines, and rooms with windows.</p>
+				<div class='contact'>
+					<h3><b>aviva.wang0@gmail.com</h3>
+					<h3>https://www.linkedin.com/in/avivawang</b></h3>
+				</div>
+<!--insert some info-->
+			</div>
+			<div class='bridget'>
+				<img class='biopic' src='bridget.png'>
+				<br>
+				<span class='namebio'>Bridget</span>
+				<p class='biotext'>Aspiring computer science engineer entering junior year in high school. Loves skiing, field hockey, running, binge eating, coding, and making the best of each day.</p>
+				<br><br>
+				<div class='contact'>
+					<h3><b>bridgetcorso22@gmail.com</h3>
+					<h3>https://www.linkedin.com/in/bridgetcorso</b></h3>
+				</div>
+<!--insert some info-->
+			</div>
+		</div>
+	</div>
+	<br>
+	<img class = 'border' src='border.jpg'>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+      	width: 950,
+        navigation: false
+      });
+
+      $('#slides2').slidesjs({
+      	width: 950,
+        navigation: false
+      });
+    });
+	</script>
+	</body5
+</html>

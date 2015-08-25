@@ -82,11 +82,11 @@ var keysTyped9 = 0;
  t8 = loadImage("tbf8.png");
  t9 = loadImage("tbf9.png");
  es = loadImage("gameover.png");
-  r = loadImage("replay.png");
- rd = loadImage("replaydown.png");
+  r = loadImage("replay.PNG");
+ rd = loadImage("replaydown.PNG");
  playButton = loadImage("playbutton.png");
  instructionsPage = loadImage("instructions.png");
- ss = loadImage("startscreen.png")
+ ss = loadImage("startscreen.PNG")
   }
   void draw(){ 
     if ( gameStarted === 0) {

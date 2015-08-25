@@ -55,8 +55,8 @@
  t8 = loadImage("FinalProject/tb8.png");
  t9 = loadImage("FinalProject/tb9.png");
  es = loadImage("FinalProject/gameover.png");
-  r = loadImage("FinalProject/replay.png");
- rd = loadImage("FinalProject/replaydown.png");
+  r = loadImage("FinalProject/replay.PNG");
+ rd = loadImage("FinalProject/replaydown.PNG");
   
   }
   void draw(){ 

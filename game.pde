@@ -236,7 +236,7 @@ var keysTyped9 = 0;
   }
  }
   }
-  if ((obstacleY >= controllerY-110 && obstacleY <= controllerY+110) && (obstacleX >= controllerX-110 && obstacleX <= controllerX + 110) && lives>0){
+  if ((obstacleY >= controllerY-110 && obstacleY <= controllerY+110) && (obstacleX >= controllerX-120 && obstacleX <= controllerX - 40) && lives>0){
     randomPosition = Math.round(Math.random() * 2);
     obstacleX = randLanes[randomPosition];
  obstacleY = -100;

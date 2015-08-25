@@ -1,0 +1,26 @@
+<html>
+<body>
+<script type="text/javascript">
+
+
+function countChars(countfrom,displayto) {
+  var len = document.getElementById(countfrom).value.length;
+  document.getElementById(displayto).innerHTML = len;
+  
+  if(event.keyCode == 13) {
+	if (len < 18) {
+		window.alert("<b>Keep Typing!</b>");
+	 } else{
+		function hideImage() { 
+    document.getElementById('bubbles').style.visibility = 'hidden';
+		}
+	}
+  }
+}
+</script>
+
+<textarea id="data" cols="40" rows="5"
+onkeyup="countChars('data','charcount');" onkeydown="countChars('data','charcount');" onmouseout="countChars('data','charcount');"></textarea><br>
+<span id="charcount">0</span> characters entered.
+</body>
+</html>

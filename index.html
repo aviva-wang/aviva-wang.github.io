@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel='shortcut icon' href='icon.ico' type='image/x-icon'/ >
+	<script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
 <style>
 	@font-face {
 		font-family:key;
@@ -54,8 +55,7 @@
 		color:white;
 	}
 	.game{
-		height:700px;
-		background-color: gray;
+		/*height:700px;*/
 		margin-top:200px;
 		margin-left: 50px;
 		margin-right: 50px;
@@ -202,8 +202,7 @@
 	</div> 
 
 <!--insert completed game in this section-->
-	<div class = 'game'>
-	</div>
+	  <canvas data-processing-sources="FinalProject/game.pde"></canvas>
 	
 	<img class = 'border' src='border.jpg'>
 
